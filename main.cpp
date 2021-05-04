@@ -12,8 +12,9 @@ int main(){
     LerMatriz(sudoku_matriz);
     ConverteMatriz(sudoku_matriz);
     Imprime(sudoku_matriz);
+    Menu(sudoku_matriz,opcao, linha, coluna);
 
-    //std::cout << "Deu bom!" << std::endl;
+    
 
     return 0;
 }

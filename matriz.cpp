@@ -34,6 +34,20 @@ int VerificaColuna(char sudoku_matriz[9][9], int coluna, char opcao[10]){
     }
 }
 
+int VerificaRegiao(char sudoku_matriz[9][9], int linha, int coluna, char opcao[10]){ //TODO consertar
+    if(linha >= 0 && linha < 3){
+
+    }
+    if(linha >= 3 && linha < 6){
+
+    }
+    if(linha >= 6 && linha < 9){
+
+    }
+
+    return 0;
+}
+
 void LerMatriz(char sudoku_matriz[9][9]){
     char arquivo_texto[100];
 
@@ -130,6 +144,9 @@ void Menu(char sudoku_matriz[9][9], char opcao[10], int linha, int coluna){
             if(opcao[2] == '0'){
                 sudoku_matriz[linha][coluna] = '_';
                 Imprime(sudoku_matriz);
+            }
+            else if(sudoku_matriz[linha][coluna] != '_'){
+                std::cout << "Erro! Impossivel alterar essa celula." << std::endl;
             }
             else{
                 
