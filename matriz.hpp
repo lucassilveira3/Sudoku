@@ -5,6 +5,7 @@ void Imprime(char [][9]);
 int VerificaLinha(char [][9], int, char[]);
 int VerificaColuna(char [][9], int, char[]);
 int VerificaRegiao(char [][9], int, int, char[]);
+int OrdenaRegiao(int, int);
 void LerMatriz(char [][9]);
 void ConverteMatriz(char [][9]);
 void CharParaInt(char [], int&, int&);

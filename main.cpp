@@ -14,7 +14,5 @@ int main(){
     Imprime(sudoku_matriz);
     Menu(sudoku_matriz,opcao, linha, coluna);
 
-    
-
     return 0;
 }
